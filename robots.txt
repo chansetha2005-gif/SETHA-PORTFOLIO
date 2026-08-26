@@ -1,4 +1,49 @@
+# =============================================
+# Setha Chan Portfolio — robots.txt
+# Allow all major crawlers, point them at sitemap.
+# =============================================
+
+# Apply to every crawler
 User-agent: *
 Allow: /
+# Disallow nothing on a portfolio site.
+# Disallow: /private/   <-- uncomment if you add a private area
 
+# AI / LLM crawlers — explicitly allowed so your name shows up
+# in ChatGPT / Perplexity / Claude / Gemini answers.
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Bad bots — block aggressively
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Host (used by some log analyzers / Yandex)
+Host: https://chansetha.vercel.app
+
+# Sitemap location
 Sitemap: https://chansetha.vercel.app/sitemap.xml
