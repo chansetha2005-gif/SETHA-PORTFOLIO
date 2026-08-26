@@ -1,26 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Portfolio of Setha Chan, a first-year IT student building his path to becoming a Full-Stack Developer.">
-<title>Setha Chan | Future Full-Stack Developer & IT Student</title>
+  <!-- =============================================
+       BASIC META
+  ============================================= -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0b1020">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<meta
-  name="description"
-  content="Official portfolio of Setha Chan, a first-year Information Technology student and future Full-Stack Developer. Explore my skills, projects, learning journey, and contact information."
-/>
+  <!-- SEO Title -->
+  <title>Setha Chan | Future Full-Stack Developer &amp; IT Student</title>
 
-<meta
-  name="keywords"
-  content="Setha Chan, Full Stack Developer, IT Student Cambodia, Web Developer Portfolio, Future Full Stack Developer"
-/>
-<!-- Google Fonts: Space Grotesk (display), Inter (body), JetBrains Mono (code/labels) -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- SEO Description -->
+  <meta name="description" content="Official portfolio of Setha Chan, a first-year Information Technology student from Cambodia and future Full-Stack Developer. Explore my skills, projects, learning journey, and web development portfolio.">
 
-<link rel="stylesheet" href="style.css">
+  <!-- SEO Keywords (natural, not stuffed) -->
+  <meta name="keywords" content="Setha Chan, Full-Stack Developer, Information Technology student, Cambodia, web developer portfolio, HTML, CSS, JavaScript, frontend developer, learning journey, projects">
+
+  <!-- Author / Robots -->
+  <meta name="author" content="Setha Chan">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://chansetha.vercel.app/">
+
+  <!-- Language and region -->
+  <meta name="geo.region" content="KH">
+  <meta name="geo.placename" content="Phnom Penh, Cambodia">
+
+  <!-- =============================================
+       FAVICON
+  ============================================= -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1020'/%3E%3Ctext x='50%25' y='58%25' font-family='Space Grotesk, sans-serif' font-size='34' font-weight='700' text-anchor='middle' fill='%238b7bff'%3ES%3C/text%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1020'/%3E%3Ctext x='50%25' y='58%25' font-family='Space Grotesk, sans-serif' font-size='34' font-weight='700' text-anchor='middle' fill='%238b7bff'%3ES%3C/text%3E%3C/svg%3E">
+
+  <!-- =============================================
+       OPEN GRAPH (Facebook / LinkedIn)
+  ============================================= -->
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Setha Chan Portfolio">
+  <meta property="og:url" content="https://chansetha.vercel.app/">
+  <meta property="og:title" content="Setha Chan | Future Full-Stack Developer &amp; IT Student">
+  <meta property="og:description" content="Official portfolio of Setha Chan, a first-year Information Technology student from Cambodia and future Full-Stack Developer. Explore my skills, projects, learning journey, and web development portfolio.">
+  <meta property="og:image" content="https://chansetha.vercel.app/images/setha-chan-og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Setha Chan, Information Technology student and future Full-Stack Developer">
+  <meta property="og:locale" content="en_US">
+  <meta property="profile:first_name" content="Setha">
+  <meta property="profile:last_name" content="Chan">
+
+  <!-- =============================================
+       TWITTER CARD
+  ============================================= -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://chansetha.vercel.app/">
+  <meta name="twitter:title" content="Setha Chan | Future Full-Stack Developer &amp; IT Student">
+  <meta name="twitter:description" content="Official portfolio of Setha Chan, a first-year Information Technology student from Cambodia and future Full-Stack Developer. Explore my skills, projects, learning journey, and web development portfolio.">
+  <meta name="twitter:image" content="https://chansetha.vercel.app/images/setha-chan-og-image.jpg">
+  <meta name="twitter:image:alt" content="Setha Chan, Information Technology student and future Full-Stack Developer">
+
+  <!-- =============================================
+       GOOGLE SEARCH CONSOLE VERIFICATION
+       Replace content value with your code
+  ============================================= -->
+  <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE">
+
+  <!-- =============================================
+       STRUCTURED DATA (Schema.org JSON-LD)
+       Person + ProfilePage for personal portfolio SEO
+  ============================================= -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Setha Chan",
+    "jobTitle": "Future Full-Stack Developer",
+    "url": "https://chansetha.vercel.app/",
+    "description": "First-year Information Technology student learning full-stack web development. Building a portfolio of HTML, CSS, and JavaScript projects on the journey to becoming a professional Full-Stack Developer.",
+    "image": "https://chansetha.vercel.app/images/setha-chan-og-image.jpg",
+    "sameAs": [
+      "https://github.com/YOUR_GITHUB_USERNAME",
+      "https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME",
+      "https://www.facebook.com/YOUR_FACEBOOK_USERNAME"
+    ],
+    "knowsAbout": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Frontend Development",
+      "Full-Stack Development",
+      "Web Development",
+      "Information Technology"
+    ],
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Information Technology Program"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Phnom Penh",
+      "addressCountry": "Cambodia"
+    },
+    "mainEntityOfPage": {
+      "@type": "ProfilePage",
+      "@id": "https://chansetha.vercel.app/",
+      "url": "https://chansetha.vercel.app/",
+      "name": "Setha Chan | Future Full-Stack Developer & IT Student",
+      "description": "Official portfolio of Setha Chan, a first-year Information Technology student from Cambodia and future Full-Stack Developer.",
+      "inLanguage": "en"
+    }
+  }
+  </script>
+
+  <!-- Google Fonts: Space Grotesk (display), Inter (body), JetBrains Mono (code/labels) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -84,8 +184,9 @@
       <span class="badge">🚀 FIRST-YEAR IT STUDENT</span>
 
       <h1 class="hero-title">
-        Hi, I'm <span class="name-underline">SETHA CHAN</span><br>
-        <span class="gradient-text" id="typingTitle"></span><span class="type-cursor">|</span>
+        Hi, I'm <span class="name-underline">Setha Chan</span><br>
+        <span class="sr-only">Setha Chan | Future Full-Stack Developer</span>
+        <span class="gradient-text" aria-hidden="true" id="typingTitle"></span><span class="type-cursor" aria-hidden="true">|</span>
       </h1>
 
       <p class="hero-desc">
@@ -111,7 +212,13 @@
     <div class="hero-right reveal">
       <div class="avatar-frame" id="avatarFrame">
         <!-- [INSERT MY PROFILE PHOTO HERE] Replace images/profile.jpg with your own photo -->
-        <img src="./images/photo_2024-11-15_14-44-32.jpg" alt="Setha Chan" class="avatar-img" id="avatarImg"
+        <img src="./images/setha-chan-profile.jpg"
+             alt="Setha Chan, Information Technology student and future Full-Stack Developer from Cambodia"
+             class="avatar-img"
+             id="avatarImg"
+             width="420" height="420"
+             decoding="async"
+             fetchpriority="high"
              onerror="this.onerror=null;this.src='https://placehold.co/420x420/121a33/8b7bff?text=SETHA+CHAN';">
         <div class="avatar-ring"></div>
       </div>
@@ -148,20 +255,29 @@
 <section id="about" class="section">
   <div class="section-inner">
     <p class="eyebrow reveal">// about-me</p>
-    <h2 class="section-title reveal">The Developer Behind The Screen.</h2>
+    <h2 class="section-title reveal">About Me</h2>
 
     <div class="about-grid">
       <div class="about-text reveal">
         <p>
-          My name is Setha Chan. I am a 21-year-old, first-year Information Technology student who is
-          passionate about technology, web development, and continuous learning. I am currently building
-          my foundation in HTML, CSS, JavaScript, programming logic, databases, and modern web
-          technologies.
+          My name is <strong>Setha Chan</strong>. I am a 21-year-old, first-year Information
+          Technology student based in Phnom Penh, Cambodia. I am passionate about technology,
+          modern web development, and continuous learning. Right now I am building a strong
+          foundation in <strong>HTML, CSS, and JavaScript</strong>, along with programming
+          logic, responsive design, and the core skills needed for full-stack web development.
         </p>
         <p>
-          My long-term goal is to become a professional Full-Stack Developer — someone who can design,
-          build, and ship complete web applications from the interface all the way down to the database.
-          I believe consistency beats talent, so I try to learn and build something new every week.
+          My long-term goal is to become a professional <strong>Full-Stack Developer</strong> —
+          someone who can design, build, and ship complete web applications from the user
+          interface all the way down to the database. I enjoy turning ideas into real,
+          working web projects, and I believe consistency beats talent, so I try to learn
+          and build something new every week as part of my learning journey.
+        </p>
+        <p>
+          This portfolio showcases my skills, projects, and progress as a self-taught and
+          student developer from Cambodia. Whether you are a recruiter, a fellow developer,
+          or someone who simply wants to follow my journey, I hope this site gives you a
+          clear picture of who I am and what I am working toward.
         </p>
       </div>
 
@@ -183,7 +299,7 @@
 <section id="skills" class="section section-alt">
   <div class="section-inner">
     <p class="eyebrow reveal">// tech-stack</p>
-    <h2 class="section-title reveal">My Growing Tech Stack</h2>
+    <h2 class="section-title reveal">Technical Skills</h2>
     <p class="section-sub reveal">The technologies I am learning and using on my journey to becoming a Full-Stack Developer.</p>
 
     <div class="skills-columns">
@@ -261,7 +377,7 @@
 <section id="journey" class="section">
   <div class="section-inner">
     <p class="eyebrow reveal">// git log --journey</p>
-    <h2 class="section-title reveal">My Journey to Full-Stack Development</h2>
+    <h2 class="section-title reveal">Learning Journey</h2>
     <p class="section-sub reveal">Commits on the road from student to developer.</p>
 
     <div class="git-log reveal">
@@ -329,7 +445,7 @@
 <section id="projects" class="section section-alt">
   <div class="section-inner">
     <p class="eyebrow reveal">// projects</p>
-    <h2 class="section-title reveal">Projects I'm Building</h2>
+    <h2 class="section-title reveal">My Projects</h2>
 
     <div class="projects-grid">
 
@@ -462,7 +578,7 @@
 <section id="contact" class="section section-alt">
   <div class="section-inner">
     <p class="eyebrow reveal">// contact</p>
-    <h2 class="section-title reveal">Let's Connect</h2>
+    <h2 class="section-title reveal">Contact</h2>
 
     <div class="contact-grid">
       <form class="contact-form reveal" id="contactForm" novalidate>
@@ -493,11 +609,11 @@
       <div class="contact-side reveal">
         <p>Feel free to reach out — I'm always happy to talk about tech, learning, or opportunities.</p>
         <div class="social-links">
-          <a href="#" class="social-link"><span>🐙</span> GitHub</a>
-          <a href="#" class="social-link"><span>💼</span> LinkedIn</a>
-          <a href="#" class="social-link"><span>📘</span> Facebook</a>
-          <a href="#" class="social-link"><span>📸</span> Instagram</a>
-          <a href="mailto:your@email.com" class="social-link"><span>📧</span> Email</a>
+          <a href="https://github.com/YOUR_GITHUB_USERNAME" class="social-link" aria-label="Setha Chan on GitHub" rel="noopener" target="_blank"><span aria-hidden="true">🐙</span> GitHub</a>
+          <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME" class="social-link" aria-label="Setha Chan on LinkedIn" rel="noopener" target="_blank"><span aria-hidden="true">💼</span> LinkedIn</a>
+          <a href="https://www.facebook.com/YOUR_FACEBOOK_USERNAME" class="social-link" aria-label="Setha Chan on Facebook" rel="noopener" target="_blank"><span aria-hidden="true">📘</span> Facebook</a>
+          <a href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME" class="social-link" aria-label="Setha Chan on Instagram" rel="noopener" target="_blank"><span aria-hidden="true">📸</span> Instagram</a>
+          <a href="mailto:your@email.com" class="social-link" aria-label="Email Setha Chan"><span aria-hidden="true">📧</span> Email</a>
         </div>
       </div>
     </div>
@@ -526,7 +642,10 @@
     </nav>
 
     <div class="footer-social">
-      <a href="#">🐙</a><a href="#">💼</a><a href="#">📘</a><a href="#">📸</a>
+      <a href="https://github.com/YOUR_GITHUB_USERNAME" aria-label="GitHub" rel="noopener" target="_blank">🐙</a>
+      <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME" aria-label="LinkedIn" rel="noopener" target="_blank">💼</a>
+      <a href="https://www.facebook.com/YOUR_FACEBOOK_USERNAME" aria-label="Facebook" rel="noopener" target="_blank">📘</a>
+      <a href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME" aria-label="Instagram" rel="noopener" target="_blank">📸</a>
     </div>
   </div>
   <p class="footer-copy">© 2026 Setha Chan. Built with HTML, CSS &amp; JavaScript.</p>

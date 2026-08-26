@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chansetha.vercel.app/sitemap.xml
