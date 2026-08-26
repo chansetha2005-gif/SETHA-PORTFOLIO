@@ -13,10 +13,10 @@
   <title>Setha Chan | Future Full-Stack Developer &amp; IT Student</title>
 
   <!-- SEO Description -->
-  <meta name="description" content="Official portfolio of Setha Chan, a first-year Information Technology student from Cambodia and future Full-Stack Developer. Explore my skills, projects, learning journey, and web development portfolio.">
+  <meta name="description" content="Official personal portfolio of Setha Chan, also known as Chan Setha, a first-year Information Technology student from Cambodia and future Full-Stack Developer.">
 
   <!-- SEO Keywords (natural, not stuffed) -->
-  <meta name="keywords" content="Setha Chan, Full-Stack Developer, Information Technology student, Cambodia, web developer portfolio, HTML, CSS, JavaScript, frontend developer, learning journey, projects">
+  <meta name="keywords" content="Setha Chan, Chan Setha, Full-Stack Developer, Information Technology student, Cambodia, web developer portfolio, HTML, CSS, JavaScript, frontend developer, learning journey, projects">
 
   <!-- Author / Robots -->
   <meta name="author" content="Setha Chan">
@@ -43,7 +43,7 @@
   <meta property="og:site_name" content="Setha Chan Portfolio">
   <meta property="og:url" content="https://chansetha.vercel.app/">
   <meta property="og:title" content="Setha Chan | Future Full-Stack Developer &amp; IT Student">
-  <meta property="og:description" content="Official portfolio of Setha Chan, a first-year Information Technology student from Cambodia and future Full-Stack Developer. Explore my skills, projects, learning journey, and web development portfolio.">
+  <meta property="og:description" content="Official personal portfolio of Setha Chan, also known as Chan Setha, a first-year Information Technology student from Cambodia and future Full-Stack Developer.">
   <meta property="og:image" content="https://chansetha.vercel.app/images/setha-chan-og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -58,7 +58,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://chansetha.vercel.app/">
   <meta name="twitter:title" content="Setha Chan | Future Full-Stack Developer &amp; IT Student">
-  <meta name="twitter:description" content="Official portfolio of Setha Chan, a first-year Information Technology student from Cambodia and future Full-Stack Developer. Explore my skills, projects, learning journey, and web development portfolio.">
+  <meta name="twitter:description" content="Official personal portfolio of Setha Chan, also known as Chan Setha, a first-year Information Technology student from Cambodia and future Full-Stack Developer.">
   <meta name="twitter:image" content="https://chansetha.vercel.app/images/setha-chan-og-image.jpg">
   <meta name="twitter:image:alt" content="Setha Chan, Information Technology student and future Full-Stack Developer">
 
@@ -77,6 +77,7 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Setha Chan",
+    "alternateName": "Chan Setha",
     "jobTitle": "Future Full-Stack Developer",
     "url": "https://chansetha.vercel.app/",
     "description": "First-year Information Technology student learning full-stack web development. Building a portfolio of HTML, CSS, and JavaScript projects on the journey to becoming a professional Full-Stack Developer.",
@@ -84,16 +85,20 @@
     "sameAs": [
       "https://github.com/YOUR_GITHUB_USERNAME",
       "https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME",
-      "https://www.facebook.com/YOUR_FACEBOOK_USERNAME"
+      "https://www.facebook.com/YOUR_FACEBOOK_USERNAME",
+      "https://twitter.com/YOUR_TWITTER_USERNAME",
+      "https://www.instagram.com/YOUR_INSTAGRAM_USERNAME"
     ],
     "knowsAbout": [
       "HTML",
       "CSS",
       "JavaScript",
-      "Frontend Development",
-      "Full-Stack Development",
       "Web Development",
-      "Information Technology"
+      "Full-Stack Development"
+    ],
+    "knowsLanguage": [
+      "en",
+      "km"
     ],
     "alumniOf": {
       "@type": "EducationalOrganization",
@@ -109,9 +114,31 @@
       "@id": "https://chansetha.vercel.app/",
       "url": "https://chansetha.vercel.app/",
       "name": "Setha Chan | Future Full-Stack Developer & IT Student",
-      "description": "Official portfolio of Setha Chan, a first-year Information Technology student from Cambodia and future Full-Stack Developer.",
+      "description": "Official personal portfolio of Setha Chan, also known as Chan Setha, a first-year Information Technology student from Cambodia and future Full-Stack Developer.",
       "inLanguage": "en"
     }
+  }
+  </script>
+
+  <!-- =============================================
+       STRUCTURED DATA: WebSite schema
+       Helps Google understand the site name + canonical
+  ============================================= -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Setha Chan Portfolio",
+    "alternateName": "Chan Setha Portfolio",
+    "url": "https://chansetha.vercel.app/",
+    "inLanguage": "en",
+    "publisher": {
+      "@type": "Person",
+      "name": "Setha Chan",
+      "alternateName": "Chan Setha",
+      "url": "https://chansetha.vercel.app/"
+    },
+    "description": "Official personal portfolio of Setha Chan, a first-year Information Technology student from Cambodia and future Full-Stack Developer."
   }
   </script>
 
@@ -190,9 +217,10 @@
       </h1>
 
       <p class="hero-desc">
-        I'm a 21-year-old, first-year Information Technology student learning how to build modern
-        websites and applications. My goal is to become a professional Full-Stack Developer and
-        create useful digital experiences — one project, one commit at a time.
+        I am <strong>Setha Chan</strong> (also known as <strong>Chan Setha</strong>), a first-year
+        Information Technology student from Cambodia learning how to build modern websites and
+        applications. My goal is to become a professional Full-Stack Developer and create useful
+        digital experiences — one project, one commit at a time.
       </p>
 
       <div class="hero-actions">
@@ -211,15 +239,16 @@
 
     <div class="hero-right reveal">
       <div class="avatar-frame" id="avatarFrame">
-        <!-- [INSERT MY PROFILE PHOTO HERE] Replace images/profile.jpg with your own photo -->
-        <img src="./images/setha-chan-profile.jpg"
-             alt="Setha Chan, Information Technology student and future Full-Stack Developer from Cambodia"
+        <!-- Profile photo of Setha Chan (Cambodian IT student, future Full-Stack Developer) -->
+        <img src="./images/setha-chan-portrait.jpg"
+             alt="Setha Chan, Cambodian IT student and future Full-Stack Developer"
              class="avatar-img"
              id="avatarImg"
              width="420" height="420"
+             loading="eager"
              decoding="async"
              fetchpriority="high"
-             onerror="this.onerror=null;this.src='https://placehold.co/420x420/121a33/8b7bff?text=SETHA+CHAN';">
+             onerror="this.onerror=null;this.src='https://placehold.co/420x420/121a33/8b7bff?text=Setha+Chan';">
         <div class="avatar-ring"></div>
       </div>
 
@@ -260,24 +289,25 @@
     <div class="about-grid">
       <div class="about-text reveal">
         <p>
-          My name is <strong>Setha Chan</strong>. I am a 21-year-old, first-year Information
-          Technology student based in Phnom Penh, Cambodia. I am passionate about technology,
-          modern web development, and continuous learning. Right now I am building a strong
-          foundation in <strong>HTML, CSS, and JavaScript</strong>, along with programming
-          logic, responsive design, and the core skills needed for full-stack web development.
+          My name is <strong>Setha Chan</strong> — some people also know me as
+          <strong>Chan Setha</strong>, which is a natural variation of the same name. I am a
+          21-year-old, first-year Information Technology student based in Phnom Penh, Cambodia.
+          I am passionate about technology, modern web development, and continuous learning.
         </p>
         <p>
-          My long-term goal is to become a professional <strong>Full-Stack Developer</strong> —
-          someone who can design, build, and ship complete web applications from the user
-          interface all the way down to the database. I enjoy turning ideas into real,
-          working web projects, and I believe consistency beats talent, so I try to learn
-          and build something new every week as part of my learning journey.
+          Right now I am building a strong foundation in <strong>HTML, CSS, and JavaScript</strong>,
+          along with programming logic, responsive design, and the core skills needed for
+          full-stack web development. My long-term goal is to become a professional
+          <strong>Full-Stack Developer</strong> — someone who can design, build, and ship
+          complete web applications from the user interface all the way down to the database.
         </p>
         <p>
-          This portfolio showcases my skills, projects, and progress as a self-taught and
-          student developer from Cambodia. Whether you are a recruiter, a fellow developer,
-          or someone who simply wants to follow my journey, I hope this site gives you a
-          clear picture of who I am and what I am working toward.
+          This is the official personal portfolio of Setha Chan. It documents my
+          <strong>learning journey</strong> as an IT student, the <strong>web development
+          projects</strong> I am building with HTML, CSS, and JavaScript, and the practical
+          skills I am picking up week by week. Whether you are a recruiter, a fellow student
+          developer, or someone who simply searched for "Setha Chan" or "Chan Setha" and
+          landed here — welcome to my corner of the web.
         </p>
       </div>
 
