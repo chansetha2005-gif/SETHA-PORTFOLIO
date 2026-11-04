@@ -475,25 +475,6 @@
     });
   }
 
-  /* -----------------------------------------------
-     10. DOWNLOAD CV PLACEHOLDER
-  ------------------------------------------------ */
-  function initDownloadCv() {
-    const downloadCv = $('#downloadCv');
-    if (!downloadCv) return;
-
-    const href = downloadCv.getAttribute('href');
-    const hasFile = href && href !== '#' && !href.startsWith('javascript:');
-    if (hasFile) return;
-
-    downloadCv.addEventListener('click', (event) => {
-      event.preventDefault();
-      window.alert(
-        'Add your CV file (e.g. cv.pdf) to the project folder and update the link in index.html (#downloadCv) to point to it.'
-      );
-    });
-  }
-
   onReady(() => {
     initLoader();
     initNavigation();
@@ -504,6 +485,5 @@
     initParticles();
     initTypingTitle();
     initContactForm();
-    initDownloadCv();
   });
 })();
