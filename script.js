@@ -329,9 +329,9 @@
     if (!typingEl) return;
 
     const phrases = [
-      'Future Full-Stack Developer.',
-      'Building My Skills, One Project at a Time.',
-      'Turning Curiosity Into Code.'
+      'Building My Future in Technology.',
+      'Learning. Creating. Improving.',
+      'Future Full-Stack Developer.'
     ];
 
     if (prefersReducedMotion()) {
