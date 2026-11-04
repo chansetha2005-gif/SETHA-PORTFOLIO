@@ -375,11 +375,12 @@
   ------------------------------------------------ */
   function initContactForm() {
     const form = $('#contactForm');
-    const formSuccess = $('#formSuccess');
+    const formStatus = $('#formSuccess');
     if (!form) return;
+    const submitButton = $('button[type="submit"]', form);
 
     const validators = {
-      fullName: (value) => value.trim().length >= 2 || 'Please enter your full name.',
+      name: (value) => value.trim().length >= 2 || 'Please enter your full name.',
       email: (value) => EMAIL_PATTERN.test(value.trim()) || 'Please enter a valid email address.',
       subject: (value) => value.trim().length >= 3 || 'Please enter a subject.',
       message: (value) => value.trim().length >= 10 || 'Message should be at least 10 characters.'
@@ -410,21 +411,54 @@
       return Object.keys(validators).every(validateField);
     }
 
-    form.addEventListener('submit', (event) => {
+    form.addEventListener('submit', async (event) => {
       event.preventDefault();
 
       if (!validateForm()) {
-        formSuccess?.classList.remove('show');
+        formStatus?.classList.remove('show');
         const firstInvalid = form.querySelector('.invalid');
         if (firstInvalid) firstInvalid.focus();
         return;
       }
 
-      formSuccess?.classList.add('show');
-      form.reset();
+      if (form.action.endsWith('/YOUR_FORM_ID')) {
+        if (formStatus) {
+          formStatus.textContent = 'Connect this form by replacing YOUR_FORM_ID with your Formspree form ID.';
+          formStatus.classList.add('show', 'error');
+        }
+        return;
+      }
 
-      Object.keys(validators).forEach((field) => setFieldState(field, true, ''));
-      setTimeout(() => formSuccess?.classList.remove('show'), 6000);
+      if (submitButton) submitButton.disabled = true;
+      if (formStatus) {
+        formStatus.classList.remove('show', 'error');
+        formStatus.textContent = 'Sending your message...';
+        formStatus.classList.add('show');
+      }
+
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { Accept: 'application/json' }
+        });
+
+        if (!response.ok) {
+          throw new Error(`Form submission failed with status ${response.status}.`);
+        }
+
+        form.reset();
+        Object.keys(validators).forEach((field) => setFieldState(field, true, ''));
+        if (formStatus) formStatus.textContent = 'Thanks! Your message has been sent.';
+      } catch (error) {
+        console.error('Contact form submission failed:', error);
+        if (formStatus) {
+          formStatus.textContent = 'Sorry, your message could not be sent. Please try again or email me directly at setha.chan@fellow.passerellesnumeriques.org.';
+          formStatus.classList.add('error');
+        }
+      } finally {
+        if (submitButton) submitButton.disabled = false;
+      }
     });
 
     Object.keys(validators).forEach((field) => {

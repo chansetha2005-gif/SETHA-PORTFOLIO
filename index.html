@@ -668,11 +668,11 @@
     <h2 class="section-title reveal">Contact</h2>
 
     <div class="contact-grid">
-      <form class="contact-form glass reveal" id="contactForm" novalidate>
+      <form class="contact-form glass reveal" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
         <div class="form-row">
-          <label for="fullName">Full Name</label>
-          <input type="text" id="fullName" name="fullName" placeholder="Your full name" autocomplete="name" maxlength="80" required aria-describedby="err-fullName">
-          <span class="form-error" id="err-fullName"></span>
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" autocomplete="name" maxlength="80" required aria-describedby="err-name">
+          <span class="form-error" id="err-name"></span>
         </div>
         <div class="form-row">
           <label for="email">Email</label>
@@ -690,7 +690,7 @@
           <span class="form-error" id="err-message"></span>
         </div>
         <button type="submit" class="btn btn-primary form-submit">Send Message <span class="arrow">→</span></button>
-        <p class="form-success" id="formSuccess" role="status" aria-live="polite">✅ Message ready! (Connect this form to a backend or service like Formspree to actually send it.)</p>
+        <p class="form-success" id="formSuccess" role="status" aria-live="polite"></p>
       </form>
 
       <div class="contact-side reveal">

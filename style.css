@@ -889,6 +889,8 @@ body::before{
 .form-success.show{ display:block; }
 
 .contact-side p{ color: var(--text-dim); margin-bottom: 24px; }
+.form-success.error{ color:#f87171; }
+.form-submit:disabled{ opacity:0.65; cursor:wait; }
 .social-links{ display:flex; flex-direction:column; gap:12px; }
 .social-link{
   display:flex; align-items:center; gap:12px;
